@@ -1,0 +1,19 @@
+def print_rangoli(size):
+    alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    lines = []
+    
+    for i in range(size):
+        # Create the letters for each line
+        line = '-'.join(alphabet[size-1:i:-1] + alphabet[i:size])                # Connects characters symmetrically from end to beginning and from beginning to end
+        # Center the line and add it to the list
+        lines.append(line.center(4*size-3, '-'))                                 # The longest line has 2*size - 1 characters and 2*size - 2 between characters. So there wil be 4*size - 3
+        # Center apply for line and add a new element to the end of the list (list is line)
+    
+    # Print the top half
+    print('\n'.join(lines[::-1]))
+    # Print the bottom half (excluding the middle line)
+    print('\n'.join(lines[1:]))
+
+# Get input from user
+n = int(input("Enter the size of the rangoli: "))
+print_rangoli(n)

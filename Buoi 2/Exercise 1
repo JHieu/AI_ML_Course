@@ -1,0 +1,23 @@
+def minion_game(string):
+    vowels = 'AEIOU'
+    an_score = 0
+    minh_score = 0
+    length = len(string)
+
+    for i in range(length):
+        if string[i] in vowels:
+            minh_score += length - i
+        else:
+            an_score += length - i
+
+    if an_score > minh_score:
+        print(f"An {an_score}")
+    elif minh_score > an_score:
+        print(f"Minh {minh_score}")
+    else:
+        print("Draw")
+
+# Example usage
+if __name__ == "__main__":
+    s = input("Enter a string: ").upper()
+    minion_game(s)
