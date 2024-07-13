@@ -1,0 +1,18 @@
+import getpass
+# Right password
+correct_password = "password123"
+# Goi so lan thu la attempt
+attempts = 0
+# Lien tuc hoi password 
+while attempts < 5:
+    entered_password = getpass.getpass("Enter password: ")
+    if entered_password == correct_password:
+        print("Correct")
+        break
+    else:
+        print("Incorrect")
+        attempts +=1
+if attempts > 5:
+    print("You are kicked off of the system")        
+
+

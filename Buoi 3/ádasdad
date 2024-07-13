@@ -1,0 +1,35 @@
+# def predict(x, y, z):
+#    return x*w + b
+# Tinh dao ham
+# def gradient(y_hat, x, y):
+#    dw = 2*x*(y_hat - y)
+#    db = 2*(y_hat - y)
+
+#    return(dw, db)
+# Update weights
+# def update_weight(w, b, lr, dw, db):
+#    w_new = w - lr*dw
+#    b_new = b - lr*db
+
+
+
+
+
+
+
+
+# tao ndarray tu list
+
+import numpy as np
+
+# tao list
+list3D = [[[1,6],[2,2],[3,4]],
+          [[4,7],[5,2],[6,9]],
+          [[7,7],[8,2],[9,5]]]
+  
+
+# tao ndarray
+data = np.array(list3D)
+
+print(data)
+print(data.shape)

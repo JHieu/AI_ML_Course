@@ -1,0 +1,7 @@
+height = int(input("Nhap chieu cao cua kim cuong: "))   # Ham input se print ra va int la so nguyen
+for i in range(height):                                 # Chay tu 0 toi height - 1
+    space = abs(height // 2 - i)                        # Khoang trong tinh bang tri tuyet doi cua height chia lay phan nguyen tru di i 
+    star = (height - 2 * space)                         
+    print(" " * space + "*" * star)                     # In ra khoang trong va sao tren cung mot hang voi dau cong la noi chuoi
+
+# Theo hang giua ta dua theo ma tinh so khoang trong
